@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo-List</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+</head>
+<body>
+    <div class="container">
+        <div class="text">
+            <h2>Your To-do List</h2>
+            <p>You oughta abide dear user <i class="fa-regular fa-face-smile"></i></p>
+             <div id="progressBar">
+                <div id="progress">
+
+                </div>
+             </div>
+        </div>
+       
+        <div class="number" id="number"> 
+            <p>0 / 0</p>
+        </div>
+    </div>
+
+    <div class="inputBox">
+        <form action="">
+            <input type="text" placeholder="Write your task" id="taskInput" autocomplete="off"><button type="submit" id="newTask"><i class="fa-solid fa-plus"></i></button>
+        </form>
+    </div>
+    <div class="list">
+        <ul id="taskList">
+            
+        </ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #2C3E50, #4CA1AF); 
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    padding: 1rem;
+}
+
+.container {
+    background: radial-gradient(circle at top left, #7f9bb6, #5c7dba);
+    width: 90%;
+    max-width: 400px;
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2rem 0rem;
+    border-radius: 10px;
+    gap: 1rem;
+    margin-bottom: 2.2rem;
+    flex-wrap: wrap; 
+}
+
+#progressBar {
+    background-color: #aabbd9;
+    width: 100%;
+    height: 7px;
+    margin-top: 1.5rem;
+    border-radius: .5rem;
+    transition: width 0.3s ease-in-out;
+}
+
+#progress {
+    background-color: rgb(122, 113, 243);
+    height: 7px;
+    width: 0%;
+    box-shadow:
+        0 0 10px rgba(122, 113, 243, 0.9),
+        0 0 20px rgba(122, 113, 243, 0.9),
+        0 0 30px rgba(122, 113, 243, 0.9);
+    transition: width 0.7s ease-in-out;
+}
+
+
+.number {
+    background-color: rgb(134, 126, 252);
+    box-shadow: 0 8px 20px rgba(122, 113, 243, 0.3), 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: 95px;
+    width: 95px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-weight: bolder;
+    font-size: 1.2rem;
+    flex-shrink: 0;
+    cursor: pointer;
+}
+
+.inputBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+input {
+   padding: .7rem; 
+   width: 365px;
+   outline: none;
+   background: radial-gradient(circle at top left, #7f9bb6, #5c7dba);
+   border: none;
+   border-top-left-radius: .5rem;
+   border-bottom-left-radius: .5rem;
+   margin-bottom: 10px;
+}
+
+button {
+    padding: .7rem;
+    cursor: pointer;
+    border: none;
+    background-color: rgb(134, 126, 252);
+    box-shadow: 0 8px 20px rgba(122, 113, 243, 0.3), 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-top-right-radius: .5rem;
+    border-bottom-right-radius: .5rem;
+}
+
+button:hover {
+    background-color: rgb(142, 133, 255); 
+    box-shadow:
+        0 0 10px rgba(122, 113, 243, 0.6),
+        0 0 20px rgba(122, 113, 243, 0.4),
+        0 0 30px rgba(122, 113, 243, 0.2);
+}
+
+.number:hover {
+    box-shadow:
+        0 0 10px rgba(122, 113, 243, 0.6),
+        0 0 20px rgba(122, 113, 243, 0.4),
+        0 0 30px rgba(122, 113, 243, 0.2);
+}
+
+.taskItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: radial-gradient(circle at top left, #7f9bb6, #5c7dba);
+    padding: 10px;
+    border-radius: .5rem;
+    width: 400px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+.task {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.task.completed {
+    text-decoration: line-through;
+    color: rgb(17, 0, 255);
+}
+
+ul {
+    list-style: none;
+}
+
+.checkbox {
+    width: 20px;
+    height: 20px;
+    accent-color: rgb(17, 0, 255);
+    cursor: pointer;
+    flex-shrink: 0; 
+    margin-top: 7px;
+    margin-right: 7px;
+}    
+
+.icons {
+    cursor: pointer;
+}
+
+.emo2 {
+    margin-left: 5px;
+} 
